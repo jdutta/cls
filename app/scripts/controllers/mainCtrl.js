@@ -15,9 +15,13 @@ angular.module('clsApp').controller('MainCtrl', function ($scope, $sce) {
         });
     }
 
+    function computeUrlsArr() {
+        $scope.model.urlsArr = getLocations($scope.model.locations, $scope.model.query);
+    }
+
     function onTyping(evt) {
         if (evt.which === 13) {
-            $scope.model.urlsArr = getLocations($scope.model.locations, $scope.model.query);
+            computeUrlsArr();
         }
     }
 
@@ -28,4 +32,6 @@ angular.module('clsApp').controller('MainCtrl', function ($scope, $sce) {
     };
 
     $scope.onTyping = onTyping;
+
+    computeUrlsArr();
 });
