@@ -2,3 +2,6 @@ To quickly push dist/ folder contents to gh-pages branch,
 see: https://gist.github.com/cobyism/4730490
 
 Command: git subtree push --prefix dist origin gh-pages
+
+If subtree command is not recognized, 
+see: http://engineeredweb.com/blog/how-to-install-git-subtree/
