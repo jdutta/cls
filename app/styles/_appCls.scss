@@ -1,0 +1,26 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.cl-main {
+    padding: 10px 20px;
+
+    input.cl-locs {
+        width: 400px;
+    }
+
+    input.cl-query {
+        width: 300px;
+    }
+
+    .cl-results {
+        margin-top: 10px;
+
+        iframe {
+            @include size(90%, 400px);
+        }
+    }
+}
