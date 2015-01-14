@@ -12,6 +12,10 @@
         width: 400px;
     }
 
+    input.cl-searchtype {
+        width: 50px;
+    }
+
     input.cl-query {
         width: 300px;
     }
@@ -20,7 +24,8 @@
         margin-top: 10px;
 
         iframe {
-            @include size(90%, 400px);
+            @include size(90%, 500px);
+            border: 1px solid #ccc;
         }
     }
 }
