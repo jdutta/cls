@@ -1,7 +1,11 @@
 <div class="cl-main">
     <!-- main.html -->
 
-    <h1>Multi-site CL search</h1>
+    <div class="e-header">
+        <h1>Multi-site Craigslist Search</h1>
+        <h4>Why open multiple tabs when you can just scroll?</h4>
+        <h6>Note: Meta+Click to open any link in the results.</h6>
+    </div>
 
     <input type="text"
            class="cl-locs"
@@ -20,7 +24,7 @@
            placeholder="e.g. query=r1200gs">
 
     <div class="cl-results" ng-repeat="url in model.urlsArr">
-        <div>{{ url }}</div>
+        <div class="cl-result-url">{{ url }}</div>
         <iframe ng-src="{{url}}"></iframe>
     </div>
 </div>

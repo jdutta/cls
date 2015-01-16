@@ -7,6 +7,20 @@
 
 .cl-main {
     padding: 10px 20px;
+    font-family: monospace;
+    background-color: #ccc;
+
+    .e-header {
+        margin-bottom: 20px;
+
+        h1, h4 {
+            margin: 0;
+        }
+
+        h4, h6 {
+            color: #777;
+        }
+    }
 
     input.cl-locs {
         width: 400px;
@@ -21,11 +35,17 @@
     }
 
     .cl-results {
-        margin-top: 10px;
+        margin-top: 20px;
+
+        .cl-result-url {
+            width: 90%;
+            text-align: right;
+        }
 
         iframe {
             @include size(90%, 500px);
-            border: 1px solid #ccc;
+            border: none;
+            box-shadow: 0 0 5px 1px rgba(black, 0.1);
         }
     }
 }
